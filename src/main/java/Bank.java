@@ -116,7 +116,6 @@ class Bank {
                     ANSI_RED + "Аккаунт " + enteredLogin + " не зарегистрирован в системе" + ANSI_RESET + "\n"
             );
         }
-
     }
 
     // Найти пользователя
