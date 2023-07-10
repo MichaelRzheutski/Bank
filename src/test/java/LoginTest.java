@@ -14,23 +14,22 @@ public class LoginTest {
 
 //        System.out.print("\nПожалуйста, введите ваше имя: ");
 //        String enteredLogin = scanner.nextLine();
-        String enteredLogin = EXPECTED_USER_NAME;
 
 //        System.out.print("Введите пароль: ");
 //        String enteredPassword = scanner.nextLine();
-        String enteredPassword = EXPECTED_USER_PASSWORD;
 
                 // Проверка, если пользователь вышел
-        User user = bank.findUser(enteredLogin);
+        User user = bank.findUser(EXPECTED_USER_NAME);
         if (user == null) {
             System.out.println(
-                    ANSI_RED + "Аккаунт " + enteredLogin + " не зарегистрирован в системе" + ANSI_RESET + "\n"
+                    ANSI_RED + "Аккаунт " + EXPECTED_USER_NAME +
+                            " не зарегистрирован в системе" + ANSI_RESET + "\n"
             );
             return false;
         }
 
         // Проверка, если пароль неверный
-        if (!user.getPassword().equals(enteredPassword)) {
+        if (!user.getPassword().equals(EXPECTED_USER_PASSWORD)) {
             System.out.println(ANSI_RED + "Неверный пароль!" + ANSI_RESET + "\n");
             return false;
         }
