@@ -57,7 +57,7 @@ public class SendMoneyTest {
         if (user != null) {
             transaction = new Transaction(false, money, recipient);
 
-            // Сэтаем активного пользователя, админа
+            // Сэтаем активного пользователя, user1
             bank.setActiveUser(new User(RECIPIENT_LOGIN, RECIPIENT_PASSWORD));
 
             transaction.transferMoney(bank.getActiveUser(), user);
