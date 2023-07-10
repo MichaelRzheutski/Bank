@@ -16,7 +16,7 @@ public class Main {
     }
 
     // Создание главного админа (может изменять права других пользователей)
-    private static void createAdmin(Bank bank) {
+    public static void createAdmin(Bank bank) {
         User defaultAdmin = new User("admin", "admin");
         defaultAdmin.setAdmin(true);
         defaultAdmin.setBalance(200);
