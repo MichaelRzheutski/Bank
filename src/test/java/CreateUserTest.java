@@ -7,8 +7,8 @@ public class CreateUserTest {
     public static final String ANSI_GREEN = "\u001B[32m"; // Зелёный цвет
     public static final String ANSI_RED = "\u001B[31m"; // Красный цвет
 
-    public final String EXPECTED_NEW_USER_NAME = "user1";
-    public final String EXPECTED_NEW_USER_PASSWORD = "543968";
+    public static final String EXPECTED_NEW_USER_NAME = "user1";
+    public static final String EXPECTED_NEW_USER_PASSWORD = "543968";
 
     public boolean createUser() {
 //        Scanner scanner = new Scanner(System.in);

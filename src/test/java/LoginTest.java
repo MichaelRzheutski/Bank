@@ -6,8 +6,8 @@ public class LoginTest {
     public static final String ANSI_RESET = "\u001B[0m"; // Сброс цвета
     public static final String ANSI_RED = "\u001B[31m"; // Красный цвет
 
-    public final String EXPECTED_USER_NAME = "admin";
-    public final String EXPECTED_USER_PASSWORD = "admin";
+    public static final String EXPECTED_USER_NAME = "admin";
+    public static final String EXPECTED_USER_PASSWORD = "admin";
 
     public boolean login() {
 //        Scanner scanner = new Scanner(System.in);
