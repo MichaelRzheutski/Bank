@@ -157,7 +157,7 @@ public class Main {
         System.out.println(ANSI_GREEN + "Счёт пополнен успешно!" + ANSI_RESET + "\n");
     }
 
-    private static void makePayment(Bank bank, Scanner scanner, Scanner scanner2) {
+    public static void makePayment(Bank bank, Scanner scanner, Scanner scanner2) {
         double money;
         Transaction transaction;
         String recipient;

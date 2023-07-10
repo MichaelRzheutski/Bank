@@ -3,6 +3,9 @@ public class Transaction {
     private Double amount;
     private String recipient;
 
+    Transaction() {
+    }
+
     Transaction(Boolean transactionType, Double amount, String recipient) {
         this.transactionType = transactionType;
         this.amount = amount;
